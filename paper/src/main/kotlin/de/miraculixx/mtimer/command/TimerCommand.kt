@@ -31,8 +31,8 @@ class TimerCommand {
             playerExecutor { player, _ -> openSetup(player, false) }
         }
 
-        literalArgument("resume") {
-            anyExecutor { sender, _ -> sender.resume(false) }
+        literalArgument("start") {
+            anyExecutor { sender, _ -> sender.start(false) }
         }
 
         literalArgument("pause") {
